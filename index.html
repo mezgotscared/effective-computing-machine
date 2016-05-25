@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+ <html class="no-js">
+	<head>
+	<link rel="shortcut icon" type="image/png"
+href="favicon.ico">
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="all">
+
+<title>Madeleine Zink » Aspiring Web Page Designer</title>
+
+<meta name="description" content="A portfolio for my Web Page design class">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+<link rel="stylesheet" href="./css/main.css?v=2.0.0"><script src="./js/vendor/modernizr.min.js"></script>
+
+	</head>
+
+	<body>
+		<!-- $banner -->
+		<header class="header botDivider column" role="banner">
+	<div class="col-wrap top">
+
+	<a href="." class="logo">
+		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Typeplate" class="logo-img">
+	</a>
+			<h2>↠3am coding↞</h2>
+
+
+	</div>
+</header>
+
+
+		<!-- Main content -->
+
+		<nav class="downloads nav">
+	<div class="col-wrap">
+		<a href="file:///Users/spare/Downloads/WPD/parallax/parallax_final/parallax/index.html" data-name="Parallax" class="dl-item btn" title="typeplate.css">My Parallax Site</a>
+
+		<a href="file:///Users/spare/Downloads/WPD/new%20canvas%20stuff/index.html" data-name="Snake" class="dl-item btn" title="typeplate.scss">My Simple Snake Game</a>
+
+		<button data-name="Bower Package" class="dl-item btn" data-clipboard-action="copy" data-clipboard-text="bower install typeplate-starter-kit --save">Bower</button>
+
+		<button data-name="CDJS Package" class="dl-item btn" data-clipboard-action="copy" data-clipboard-text="https://cdnjs.cloudflare.com/ajax/libs/typeplate-starter-kit/3.0.1/css/typeplate.min.css">CDNJS</button>
+	</div>
+</nav>
+
+
+<main class="col-wrap" role="main">
+
+</section>
+<br>
+<br>
+	<header>
+		<h1 class="gamma section-title"></a> My Parallax Site</h1>
+	</header>
+
+	<p>For this particular site, I was required to create a site based off the information gained watching an interview of Jack Dorsey, the creator of Twitter and Square, in the parallax format.</p>
+
+</section>
+
+<section class="typographic-scale botDivider" id="typographic-scale">
+	<header>
+		<h1 class="typl8-gamma section-title">Snake Game</h1>
+	</header>
+
+	<p>The snake game was created based on trial and error, and using javascript. We, Mr. McGeehan, the webpage design class, and I, used javascript to essentially create every part of the snake and it's food.</p>
+
+</section>
+
+	<section class="color botDivider" id="color">
+	<header>
+		<h1 class="gamma section-title">3rd site</h1>
+	</header>
+
+	<p>talk about 3rd site.</p>
+<br>
+	<section class="word-wrap botDivider" id="word-wrap">
+	<header>
+		<h1 class="gamma section-title">4th thing</h1>
+	</header>
+
+	<p>talk about 4th thing</p>
+	<br>
+
+	<section class="indenting botDivider" id="indenting">
+
+</main>
+
+
+		<!-- Footer -->
+
+<footer role="contentinfo" class="site-footer">
+	<p>Copyright (not really) &copy;2016. Madeleine Zink</p>
+</footer>
+
+
+
+		<!-- JavaScript and analytics -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+
+<script src="./js/minified/clipboard.min.js"></script>
+<script>
+var dl_btns        = document.querySelectorAll('.btn'),
+		dl_btns_length = dl_btns.length;
+
+for (var i = 0, l = dl_btns_length; i < l; i++) {
+	dl_btns[i].addEventListener('mouseleave', function(e) {
+		e.currentTarget.classList.toggle('tooltipped');
+		e.currentTarget.removeAttribute('aria-label');
+	});
+}
+
+function showTooltip(elem, msg) {
+	elem.classList.toggle('tooltipped');
+	elem.setAttribute('aria-label', msg);
+}
+
+function fallbackMessage(action) {
+	var actionMsg = '',
+			actionKey = (action === 'cut' ? 'X' : 'C');
+
+	if(/iPhone|iPad/i.test(navigator.userAgent)) {
+		actionMsg = 'No support :(';
+	}
+
+	else if (/Mac/i.test(navigator.userAgent)) {
+		actionMsg = 'Press ⌘-' + actionKey + ' to ' + action;
+	}
+
+	else {
+		actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
+	}
+
+	return actionMsg;
+}
+
+var clipboard = new Clipboard('.dl-item.btn');
+
+clipboard.on('success', function(e) {
+	e.clearSelection();
+	showTooltip(e.trigger, 'Copied!')
+});
+
+clipboard.on('error', function(e) {
+	showTooltip(e.trigger, fallbackMessage(e.action));
+});
+</script>
+
+
+
+
+<script src="./js/minified/main-min.js?v=2.0.0"></script>
+
+
+
+	<script>
+	var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-38761755-1']);
+		_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+
+	</body>
+</html>
